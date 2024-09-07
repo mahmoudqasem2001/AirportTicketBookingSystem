@@ -15,5 +15,7 @@ namespace AirportTicketBookingSystem.Domain
         public string DepartureAirport { get; set; }
         public string ArrivalAirport { get; set; }
         public decimal Price { get; set; }
+        
+        public FlightClass Class { get;set; }
     }
 }
