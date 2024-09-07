@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Booking.cs" />
+    <Compile Include="Domain\Flight.cs" />
+    <Compile Include="Domain\FlightClass.cs" />
+    <Compile Include="Domain\Passenger.cs" />
+    <Compile Include="Domain\Validation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Presentation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
