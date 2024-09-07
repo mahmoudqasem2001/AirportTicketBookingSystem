@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Booking.cs" />
-    <Compile Include="Domain\Flight.cs" />
-    <Compile Include="Domain\FlightClass.cs" />
-    <Compile Include="Domain\Passenger.cs" />
-    <Compile Include="Domain\Validation.cs" />
+    <Compile Include="Application\UseCases\BookFlightUseCase.cs" />
+    <Compile Include="Application\UseCases\ManageBookingUseCase.cs" />
+    <Compile Include="Application\UseCases\ManagerUseCase.cs" />
+    <Compile Include="Application\UseCases\SearchFlightsUseCase.cs" />
+    <Compile Include="Domain\Entities\Booking.cs" />
+    <Compile Include="Domain\Entities\Flight.cs" />
+    <Compile Include="Domain\Entities\FlightClass.cs" />
+    <Compile Include="Domain\Entities\Passenger.cs" />
+    <Compile Include="Domain\Entities\Validation.cs" />
+    <Compile Include="Domain\Interfaces\IBookingRepository.cs" />
+    <Compile Include="Domain\Interfaces\IFlightRepository.cs" />
+    <Compile Include="Domain\Interfaces\IManagerRepository.cs" />
+    <Compile Include="Domain\Interfaces\IPassengerRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,7 +63,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Presentation\" />
   </ItemGroup>
