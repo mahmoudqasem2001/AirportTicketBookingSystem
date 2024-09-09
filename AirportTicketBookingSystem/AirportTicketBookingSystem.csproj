@@ -56,15 +56,18 @@
     <Compile Include="Domain\Interfaces\IFlightRepository.cs" />
     <Compile Include="Domain\Interfaces\IManagerRepository.cs" />
     <Compile Include="Domain\Interfaces\IPassengerRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\BookingRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\FlightRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\ManagerRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\PassengerRepository.cs" />
+    <Compile Include="Presentation\Controllers\ManagerController.cs" />
+    <Compile Include="Presentation\Controllers\PassengerController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
-    <Folder Include="Presentation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

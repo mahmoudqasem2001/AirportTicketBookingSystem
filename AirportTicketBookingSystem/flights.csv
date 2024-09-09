@@ -1,0 +1,4 @@
+FlightId	DepartureCountry	DestinationCountry	DepartureDate	DepartureAirport	ArrivalAirport	Price	Class
+F001	USA	Canada	9/1/2024	JFK	YYZ	500	Economy
+F002	UK	Germany	9/5/2024	LHR	FRA	400	Business
+F003	France	Italy	9/10/2024	CDG	FCO	300	FirstClass

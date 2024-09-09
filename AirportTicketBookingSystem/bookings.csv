@@ -1,0 +1,4 @@
+BookingId	PassengerId	FlightId	Class	Price
+B001	P001	F001	Economy	500
+B002	P002	F002	Business	400
+B003	P003	F003	FirstClass	300
