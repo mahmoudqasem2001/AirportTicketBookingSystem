@@ -1,0 +1,38 @@
+name: Build and Test
+
+# Trigger this workflow on push or pull request events
+on:
+  push:
+    branches:
+      - testing
+  pull_request:
+    branches:
+      - testing
+
+# Define the job to run on the latest Ubuntu environment
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the code from the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Setup .NET Core SDK version 7.x
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '4.7.2'  # Use .NET 7.x or the version you're targeting
+
+    # Step 3: Install NuGet dependencies
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # Step 4: Build the project
+    - name: Build the project
+      run: dotnet build --configuration Release --no-restore
+
+    # Step 5: Run the tests using xUnit
+    - name: Run tests
+      run: dotnet test --configuration Release --no-build --verbosity normal
